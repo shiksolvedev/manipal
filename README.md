@@ -1,1 +1,1 @@
-# manipal
+# manipal-online

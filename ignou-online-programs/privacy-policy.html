@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Shiksolve Education</title>
+    <meta name="description" content="Privacy Policy of Shiksolve Education Pvt. Ltd.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .pp-hero{background:var(--gradient-hero);padding:140px 0 70px;position:relative;overflow:hidden;}
+        .pp-hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
+        .pp-hero-inner{position:relative;z-index:2;text-align:center;}
+        .pp-hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);backdrop-filter:blur(10px);padding:8px 20px;border-radius:50px;color:rgba(255,255,255,0.9);font-size:0.82rem;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:22px;}
+        .pp-hero h1{font-size:clamp(2rem,4vw,3rem);color:#fff;margin-bottom:14px;}
+        .pp-hero h1 span{color:var(--gold);}
+        .pp-hero p{color:rgba(255,255,255,0.75);font-size:1rem;margin:0;}
+        .pp-layout{display:grid;grid-template-columns:260px 1fr;gap:40px;align-items:start;padding:60px 0 80px;}
+        .pp-toc{position:sticky;top:100px;background:#fff;border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:var(--shadow-sm);}
+        .pp-toc h4{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--text-light);margin-bottom:16px;}
+        .pp-toc ul{list-style:none;}
+        .pp-toc ul li{margin-bottom:4px;}
+        .pp-toc ul li a{display:block;padding:7px 12px;border-radius:8px;font-size:0.84rem;font-weight:500;color:var(--text-light);text-decoration:none;transition:all 0.2s ease;line-height:1.4;}
+        .pp-toc ul li a:hover,.pp-toc ul li a.active{background:var(--accent-light);color:var(--accent);font-weight:600;}
+        .pp-content{min-width:0;}
+        .pp-section{background:#fff;border:1px solid var(--border);border-radius:20px;padding:40px 44px;margin-bottom:24px;scroll-margin-top:100px;transition:box-shadow 0.3s;}
+        .pp-section:hover{box-shadow:var(--shadow-md);}
+        .pp-section-label{display:inline-flex;align-items:center;gap:8px;background:var(--accent-light);color:var(--accent);padding:5px 14px;border-radius:50px;font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;}
+        .pp-section h2{font-size:1.45rem;color:var(--primary);margin-bottom:18px;padding-bottom:14px;border-bottom:2px solid var(--border);}
+        .pp-section p{color:var(--text-light);font-size:0.95rem;line-height:1.8;margin-bottom:14px;}
+        .pp-section p:last-child{margin-bottom:0;}
+        .pp-section strong{color:var(--primary);font-weight:600;}
+        .pp-section a{color:var(--accent);text-decoration:none;font-weight:500;}
+        .pp-section a:hover{text-decoration:underline;}
+        .pp-deflist{margin:0;}
+        .pp-def-item{display:flex;gap:16px;padding:14px 18px;border-radius:10px;background:var(--bg);margin-bottom:10px;border-left:3px solid var(--accent);}
+        .pp-def-term{font-size:0.88rem;font-weight:700;color:var(--accent);min-width:130px;flex-shrink:0;padding-top:1px;}
+        .pp-def-desc{font-size:0.88rem;color:var(--text-light);line-height:1.7;}
+        .pp-list{list-style:none;margin:10px 0 14px;padding:0;}
+        .pp-list li{display:flex;gap:12px;align-items:flex-start;font-size:0.92rem;color:var(--text-light);line-height:1.7;margin-bottom:8px;}
+        .pp-list li::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:8px;}
+        .cookie-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:18px 0;}
+        .cookie-card{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:18px;text-align:center;transition:all 0.25s;}
+        .cookie-card:hover{border-color:var(--accent);box-shadow:var(--shadow-md);transform:translateY(-3px);}
+        .cookie-icon{font-size:1.8rem;margin-bottom:10px;}
+        .cookie-title{font-size:0.85rem;font-weight:700;color:var(--primary);margin-bottom:6px;}
+        .cookie-desc{font-size:0.78rem;color:var(--text-light);line-height:1.5;}
+        .optout-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;}
+        .optout-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:8px;font-size:0.87rem;font-weight:600;text-decoration:none;border:2px solid var(--accent);color:var(--accent);transition:all 0.25s;}
+        .optout-btn:hover{background:var(--accent);color:#fff;text-decoration:none;}
+        .contact-card{display:flex;align-items:center;gap:14px;background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin-bottom:12px;text-decoration:none;transition:all 0.25s;}
+        .contact-card:hover{border-color:var(--accent);box-shadow:var(--shadow-md);transform:translateX(4px);text-decoration:none;}
+        .contact-icon{width:42px;height:42px;border-radius:10px;background:var(--gradient-accent);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;flex-shrink:0;}
+        .contact-info-label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:var(--text-light);margin-bottom:3px;}
+        .contact-info-value{font-size:0.93rem;font-weight:600;color:var(--primary);}
+        .pp-updated{display:inline-flex;align-items:center;gap:6px;background:rgba(16,185,129,0.1);color:#059669;font-size:0.8rem;font-weight:600;padding:5px 14px;border-radius:50px;margin-bottom:24px;}
+        @media(max-width:900px){.pp-layout{grid-template-columns:1fr;}.pp-toc{display:none;}.pp-section{padding:28px 22px;}}
+        @media(max-width:480px){.pp-hero{padding:120px 0 50px;}.pp-def-item{flex-direction:column;gap:4px;}.pp-def-term{min-width:unset;}}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo"><img src="images/logo.webp" alt="Shiksolve Education"></a>
+            <div class="header-cta">
+               <nav class="nav-menu">
+                <a href="index.html#accreditations" class="nav-link">Accreditations</a>
+                <a href="index.html#programs" class="nav-link">Programs</a>
+                <a href="index.html#why-ignou" class="nav-link">Why IGNOU</a>
+               </nav>
+               <div class="nav-phone-container">
+                   <a href="tel:9217378404" class="btn btn-primary phone-btn">
+                       <i class="fa-solid fa-phone"></i> 9217378404
+                   </a>
+                   <span class="phone-note">add zero(0) before dialing</span>
+               </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="pp-hero">
+        <div class="container pp-hero-inner">
+            <div class="pp-hero-badge"><i class="fa-solid fa-shield-halved"></i> Legal &amp; Compliance</div>
+            <h1>Privacy <span>Policy</span></h1>
+            <p>Last updated: September 2025 &nbsp;|&nbsp; Shiksolve Education Pvt. Ltd.</p>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div style="background:var(--bg);">
+      <div class="container">
+        <div class="pp-layout">
+
+          <!-- Sidebar -->
+          <aside class="pp-toc">
+            <h4>On This Page</h4>
+            <ul>
+              <li><a href="#intro" class="active">Introduction</a></li>
+              <li><a href="#definitions">Definitions</a></li>
+              <li><a href="#data-collection">Data Collection</a></li>
+              <li><a href="#use-of-data">Use of Your Data</a></li>
+              <li><a href="#tracking">Tracking &amp; Cookies</a></li>
+              <li><a href="#user-rights">User Rights</a></li>
+              <li><a href="#opt-out">Opting Out of Ads</a></li>
+              <li><a href="#data-security">Data Security</a></li>
+              <li><a href="#changes">Changes to Policy</a></li>
+              <li><a href="#disclaimer">Course Disclaimer</a></li>
+              <li><a href="#third-party-links">Third-Party Links</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </aside>
+
+          <!-- Content -->
+          <main class="pp-content">
+            <div class="pp-updated"><i class="fa-solid fa-circle-check"></i> Effective date: September 2025</div>
+
+            <!-- Introduction -->
+            <section class="pp-section" id="intro">
+              <div class="pp-section-label"><i class="fa-solid fa-file-shield"></i> Overview</div>
+              <h2>Introduction</h2>
+              <p>Our website address is: <a href="https://www.shiksolveedu.com" target="_blank">https://www.shiksolveedu.com</a>. We use your Personal Data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+              <p><strong>Shiksolve Education Pvt. Ltd.</strong> (we, our, us) is committed to protecting your privacy and providing you with the best experience when using our services. This Privacy Policy explains how we collect, use, and disclose your information, and your rights regarding that data, especially concerning the use of third-party advertising platforms including Google AdSense, Google Ads, and Meta Ads.</p>
+              <p>We collect your data to improve our services and provide you with personalized content, including targeted advertisements. By continuing to use our website, you agree to the collection and use of information per this Privacy Policy.</p>
+            </section>
+
+            <!-- Definitions -->
+            <section class="pp-section" id="definitions">
+              <div class="pp-section-label"><i class="fa-solid fa-book-open"></i> Glossary</div>
+              <h2>Definitions</h2>
+              <p>For the purposes of this Privacy Policy, the following terms have the meanings set forth below:</p>
+              <div class="pp-deflist">
+                <div class="pp-def-item"><div class="pp-def-term">Company</div><div class="pp-def-desc">Referred to as "the Company", "We", "Us" or "Our" — refers to <strong>Shiksolve Education Pvt. Ltd., Gurgaon</strong>.</div></div>
+                <div class="pp-def-item"><div class="pp-def-term">Cookies</div><div class="pp-def-desc">Small files placed on your computer, mobile device, or any other device by a website, containing details of your browsing history on that website among its many uses.</div></div>
+                <div class="pp-def-item"><div class="pp-def-term">Device</div><div class="pp-def-desc">Any device that can access the Service such as a computer, a cellphone, or a digital tablet.</div></div>
+                <div class="pp-def-item"><div class="pp-def-term">Personal Data</div><div class="pp-def-desc">Any information that relates to an identified or identifiable individual.</div></div>
+                <div class="pp-def-item"><div class="pp-def-term">Service</div><div class="pp-def-desc">Refers to the Website.</div></div>
+                <div class="pp-def-item"><div class="pp-def-term">Service Provider</div><div class="pp-def-desc">Any natural or legal person who processes data on behalf of the Company. Refers to third-party companies or individuals employed by the Company to facilitate the Service or to assist in analyzing how the Service is used.</div></div>
+                <div class="pp-def-item"><div class="pp-def-term">Usage Data</div><div class="pp-def-desc">Data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</div></div>
+                <div class="pp-def-item"><div class="pp-def-term">Website</div><div class="pp-def-desc">Refers to Shiksolve Education Pvt. Ltd. website, accessible from <a href="https://www.shiksolveedu.com/" target="_blank">https://www.shiksolveedu.com/</a></div></div>
+                <div class="pp-def-item"><div class="pp-def-term">You</div><div class="pp-def-desc">The individual accessing or using the Service, or the company, or other legal entity on behalf of which such an individual is accessing or using the Service, as applicable.</div></div>
+                <div class="pp-def-item"><div class="pp-def-term">Account</div><div class="pp-def-desc">A unique account created for You to access our Service or parts of our Service.</div></div>
+              </div>
+            </section>
+
+            <!-- Data Collection -->
+            <section class="pp-section" id="data-collection">
+              <div class="pp-section-label"><i class="fa-solid fa-database"></i> Data</div>
+              <h2>Data Collection</h2>
+              <p>We collect both <strong>Personal Data</strong> (such as your name, email address, phone number, courses and colleges you are interested in) and <strong>Usage Data</strong> (such as IP address, browser type, and visit history) when you interact with our services.</p>
+              <p>Additional data is collected through:</p>
+              <ul class="pp-list">
+                <li><strong>Google AdSense:</strong> We use cookies and similar technologies to show relevant ads based on your previous interactions with our website and other websites.</li>
+                <li><strong>Google Ads &amp; Meta Ads:</strong> We share information with Facebook to serve personalized advertisements based on your activity on our website.</li>
+              </ul>
+              <p><strong>Cookies we use include:</strong></p>
+              <div class="cookie-grid">
+                <div class="cookie-card"><div class="cookie-icon">&#128274;</div><div class="cookie-title">Necessary Cookies</div><div class="cookie-desc">Required for basic functionalities of the website.</div></div>
+                <div class="cookie-card"><div class="cookie-icon">&#128202;</div><div class="cookie-title">Analytical Cookies</div><div class="cookie-desc">Help us understand and improve site performance.</div></div>
+                <div class="cookie-card"><div class="cookie-icon">&#128226;</div><div class="cookie-title">Advertising Cookies</div><div class="cookie-desc">Used by Google AdSense &amp; Facebook Ads for personalized ads.</div></div>
+              </div>
+              <p>You can opt out of personalized advertising by visiting:</p>
+              <div class="optout-row">
+                <a href="https://adssettings.google.com" target="_blank" class="optout-btn"><i class="fa-brands fa-google"></i> Google Ads Settings</a>
+                <a href="https://www.facebook.com/ads/preferences/" target="_blank" class="optout-btn"><i class="fa-brands fa-facebook"></i> Facebook Ad Preferences</a>
+              </div>
+            </section>
+
+            <!-- Use of Data -->
+            <section class="pp-section" id="use-of-data">
+              <div class="pp-section-label"><i class="fa-solid fa-gears"></i> Usage</div>
+              <h2>Use of Your Data</h2>
+              <p>We use the collected data to:</p>
+              <ul class="pp-list">
+                <li>Provide and improve our services.</li>
+                <li>Show you relevant advertisements through Google AdSense and Facebook Ads.</li>
+                <li>Provide and maintain our Service, including monitoring the usage of our Service.</li>
+                <li><strong>Manage your Account:</strong> to manage your registration as a user of the Service. The Personal Data you provide can give you access to different functionalities of the Service available to you as a registered user.</li>
+                <li><strong>Performance of a contract:</strong> the development, compliance and undertaking of the purchase contract for the products, items or services you have purchased or of any other contract with Us through the Service.</li>
+                <li><strong>Contact You:</strong> by email, telephone calls, SMS, or other equivalent forms of electronic communication regarding updates or informative communications related to the functionalities, products or contracted services, including security updates.</li>
+                <li>Provide you with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about, unless you have opted not to receive such information.</li>
+                <li><strong>Manage your requests:</strong> To attend and manage your requests to Us.</li>
+                <li><strong>Business transfers:</strong> We may use your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets.</li>
+                <li><strong>Other purposes:</strong> Data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns, and to evaluate and improve our Service, products, services, marketing and your experience.</li>
+              </ul>
+              <p><strong>Third-Party Sharing:</strong> We share your information with trusted third parties, including:</p>
+              <ul class="pp-list">
+                <li><strong>Google AdSense:</strong> To display ads based on your preferences and interests.</li>
+                <li><strong>Google Ads &amp; Meta Ads:</strong> These are used to serve targeted ads.</li>
+                <li><strong>Service Providers:</strong> Companies assisting us in running the website.</li>
+              </ul>
+            </section>
+
+            <!-- Tracking -->
+            <section class="pp-section" id="tracking">
+              <div class="pp-section-label"><i class="fa-solid fa-cookie-bite"></i> Cookies</div>
+              <h2>Tracking Technologies and Cookies</h2>
+              <p>We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include:</p>
+              <ul class="pp-list">
+                <li><strong>Cookies or Browser Cookies.</strong> A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may use Cookies.</li>
+                <li><strong>Web Beacons.</strong> Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of a certain section and verifying system and server integrity).</li>
+              </ul>
+              <p>Cookies can be <strong>"Persistent"</strong> or <strong>"Session"</strong> Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser.</p>
+            </section>
+
+            <!-- User Rights -->
+            <section class="pp-section" id="user-rights">
+              <div class="pp-section-label"><i class="fa-solid fa-scale-balanced"></i> GDPR &amp; CCPA</div>
+              <h2>User Rights</h2>
+              <p>Depending on your location, you may have certain rights over your data, such as:</p>
+              <ul class="pp-list">
+                <li>The right to access, update, or delete your personal data.</li>
+                <li>The right to opt-out of data processing for marketing purposes.</li>
+                <li>The right to withdraw consent at any time.</li>
+              </ul>
+              <p>To exercise any of these rights, please contact us using the details provided in the Contact Us section below.</p>
+            </section>
+
+            <!-- Opt-Out -->
+            <section class="pp-section" id="opt-out">
+              <div class="pp-section-label"><i class="fa-solid fa-ban"></i> Opt-Out</div>
+              <h2>Opting Out of Personalized Ads</h2>
+              <p>To manage or opt out of personalized ads, you can use the following resources. You can also adjust your cookie settings directly on our website or through your browser.</p>
+              <div class="optout-row">
+                <a href="https://adssettings.google.com" target="_blank" class="optout-btn"><i class="fa-brands fa-google"></i> Google Ads Settings</a>
+                <a href="https://www.facebook.com/ads/preferences/" target="_blank" class="optout-btn"><i class="fa-brands fa-facebook"></i> Facebook Ad Preferences</a>
+              </div>
+            </section>
+
+            <!-- Data Security -->
+            <section class="pp-section" id="data-security">
+              <div class="pp-section-label"><i class="fa-solid fa-lock"></i> Security</div>
+              <h2>Data Security</h2>
+              <p>We take the necessary steps to secure your data, but no method of transmission over the internet is completely secure. We implement industry-standard safeguards to protect your Personal Data from unauthorized access, alteration, disclosure, or destruction.</p>
+              <p>However, we cannot guarantee absolute security. You use our website at your own risk, and we encourage you to take appropriate measures to protect your personal information.</p>
+            </section>
+
+            <!-- Changes -->
+            <section class="pp-section" id="changes">
+              <div class="pp-section-label"><i class="fa-solid fa-pen-to-square"></i> Updates</div>
+              <h2>Changes to This Policy</h2>
+              <p>We reserve the right to update this Privacy Policy at any time. Any changes will be posted on this page, with an updated "Last updated" date. We encourage you to review this Privacy Policy periodically for any changes.</p>
+              <p>Changes to this Privacy Policy are effective when they are posted on this page. Your continued use of the Service after any changes constitutes your acceptance of the new Privacy Policy.</p>
+            </section>
+
+            <!-- Disclaimer -->
+            <section class="pp-section" id="disclaimer">
+              <div class="pp-section-label"><i class="fa-solid fa-triangle-exclamation"></i> Disclaimer</div>
+              <h2>Course and College Information Disclaimer</h2>
+              <p>The information displayed on this website regarding various education programmes, including fees and other details, is sourced directly from the institution's websites. We strive to ensure the accuracy and timeliness of this information. However, please be aware that:</p>
+              <ul class="pp-list">
+                <li>Colleges and universities reserve the right to modify program details, including fees, at any time. We make every effort to update our website as soon as we are notified of changes. However, there may be instances where discrepancies exist.</li>
+                <li>We recommend that you always visit the official website of the college or university offering the program you are interested in. This will ensure you have access to the most current information available.</li>
+                <li>We cannot be held responsible for any inaccuracies or mismatches between the information displayed on our website and the official information provided by the colleges and universities themselves.</li>
+              </ul>
+            </section>
+
+            <!-- Third-Party Links -->
+            <section class="pp-section" id="third-party-links">
+              <div class="pp-section-label"><i class="fa-solid fa-arrow-up-right-from-square"></i> External Links</div>
+              <h2>Links to Other Websites</h2>
+              <p>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
+              <p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
+            </section>
+
+            <!-- Contact -->
+            <section class="pp-section" id="contact">
+              <div class="pp-section-label"><i class="fa-solid fa-envelope"></i> Get in Touch</div>
+              <h2>Contact Us</h2>
+              <p>If you have any questions about this Privacy Policy, please reach out to us through any of the following channels:</p>
+              <a href="mailto:info@shiksolve.com" class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div><div class="contact-info-label">Email</div><div class="contact-info-value">info@shiksolve.com</div></div>
+              </a>
+              <a href="tel:+919217378404" class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div><div class="contact-info-label">Phone</div><div class="contact-info-value">+91-9217378404</div></div>
+              </a>
+              <a href="https://maps.google.com/?q=Plot+No.+121+Sector+44+Gurugram+Haryana+122003" target="_blank" class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div><div class="contact-info-label">Office Address</div><div class="contact-info-value">Plot No. 121, Sector 44, Gurugram, Haryana 122003</div></div>
+              </a>
+            </section>
+
+          </main>
+        </div><!-- pp-layout -->
+      </div><!-- container -->
+    </div><!-- bg wrapper -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p style="text-align:center;font-size:12px;">
+                  Email: info@shiksolve.com <br/>
+                  Address: Unit - 320, ILD Trade Centre, D1 Block, Sector 47, Gurugram, Haryana 122018
+                </p>
+                <br/>
+                <p style="font-size:11px;">Shiksolve Education is an independent education marketing and counseling platform. We are not a university or admissions authority. All programs listed are offered by respective recognized universities.</p>
+                <p>&copy; 2025 Shiksolve Education. All rights reserved. | <a style="color:#e4c34e;" href="privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) { header.classList.add('scrolled'); }
+            else { header.classList.remove('scrolled'); }
+        });
+
+        // Sidebar active highlight on scroll
+        const ppSections = document.querySelectorAll('.pp-section');
+        const tocLinks = document.querySelectorAll('.pp-toc a');
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    tocLinks.forEach(l => l.classList.remove('active'));
+                    const id = entry.target.getAttribute('id');
+                    const active = document.querySelector(`.pp-toc a[href="#${id}"]`);
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-20% 0px -70% 0px' });
+        ppSections.forEach(s => obs.observe(s));
+    </script>
+</body>
+</html>
+
+
+

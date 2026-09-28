@@ -977,12 +977,29 @@
         document.getElementById("leadform1").disabled = true;
         
        
+        try {
+          sessionStorage.setItem('lead_name', (`${data["first_name"] || ''} ${data["last_name"] || ''}`).trim());
+          sessionStorage.setItem('lead_email', data["email"] || '');
+          sessionStorage.setItem('lead_phone', data["mobile"] || '');
+          sessionStorage.setItem('lead_course', data["program"] || '');
+        } catch (err) {
+          console.warn('SessionStorage error:', err);
+        }
+
         postData(
           "https://learned-one-411711.wl.r.appspot.com/lead",
           newFormData
-        ).then((data) => {
-          console.log(data);
-
+        ).then((res) => {
+          console.log(res);
+          var q = new URLSearchParams({
+            name: (`${data["first_name"] || ''} ${data["last_name"] || ''}`).trim(),
+            email: data["email"] || '',
+            phone: data["mobile"] || '',
+            program: data["program"] || ''
+          }).toString();
+          window.location.href = "thank-you.html?" + q;
+        }).catch((err) => {
+          console.error("Error submitting lead:", err);
           window.location.href = "thank-you.html";
         });
       }

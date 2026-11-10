@@ -1,6 +1,6 @@
 Website Clone
 
-Source URL: https://mbaonline.online/affordable-mba-program
+Source URL: https://mbaonline.online/affordable-online-mba-program
 Cloned: 2026-11-10T05:53:05.129Z
 Stack: Default (HTML + CSS + JS)
 

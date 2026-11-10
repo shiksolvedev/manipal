@@ -714,8 +714,12 @@
           <option value="Google Adwords">Google Adwords</option>
         </select>
 
-        <div class="security-notice">
-          <span><i class="fa fa-lock"></i> Your Personal information is secure with us</span>
+        <div class="form-group1 form-consent">
+          <label class="consent-label" for="consent">
+            <input type="checkbox" id="consent" name="consent" class="consent-checkbox" required>
+            <span class="consent-text">I agree to be contacted by Shiksolve Education LLP and its authorized university/education partners through phone calls, SMS, WhatsApp and email regarding my selected courses, admission opportunities, fees and counselling services. <span style="color: #e74c3c; font-weight: bold;">*</span></span>
+          </label>
+          <div id="consent-error" class="consent-error">Please check this box to agree before submitting the form.</div>
         </div>
 
         <input type="submit" name="submit" id="leadform1" value="Submit Details">
@@ -838,6 +842,30 @@
 
     async function submitForm(formId) {
       if (isSubmitting) return false;
+
+      var formElement = document.querySelector(formId);
+      const consentCheckbox = document.getElementById('consent');
+      const consentError = document.getElementById('consent-error');
+
+      // Check if consent checkbox is checked
+      if (!consentCheckbox || !consentCheckbox.checked) {
+        if (consentError) consentError.style.display = 'block';
+        if (consentCheckbox) {
+          consentCheckbox.classList.add('is-invalid');
+          consentCheckbox.focus();
+          if (consentCheckbox.reportValidity) {
+            consentCheckbox.reportValidity();
+          }
+        }
+        return false;
+      } else {
+        if (consentError) consentError.style.display = 'none';
+        if (consentCheckbox) consentCheckbox.classList.remove('is-invalid');
+      }
+
+      if (formElement && formElement.reportValidity && !formElement.reportValidity()) {
+        return false;
+      }
 
       var $form = $(formId);
       var data = getFormData($form);
@@ -998,6 +1026,17 @@
       formOne.addEventListener('submit', function (event) {
         event.preventDefault();
         submitForm('#myFormOne');
+      });
+    }
+
+    const consentInput = document.getElementById('consent');
+    if (consentInput) {
+      consentInput.addEventListener('change', function () {
+        const errorEl = document.getElementById('consent-error');
+        if (this.checked) {
+          if (errorEl) errorEl.style.display = 'none';
+          this.classList.remove('is-invalid');
+        }
       });
     }
   </script>

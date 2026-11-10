@@ -177,6 +177,49 @@
       font-weight: 500;
     
     }
+
+    .form-consent {
+      margin: 12px 0 15px 0;
+    }
+
+    .consent-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .consent-checkbox {
+      width: 16px !important;
+      height: 16px !important;
+      min-width: 16px;
+      min-height: 16px;
+      margin-top: 2px;
+      accent-color: #3498db;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .consent-text {
+      font-size: 11px;
+      line-height: 1.45;
+      color: #555;
+      font-weight: 400;
+      text-align: left;
+    }
+
+    .consent-error {
+      color: #e74c3c;
+      font-size: 11px;
+      font-weight: 500;
+      margin-top: 5px;
+      display: none;
+    }
+
+    .consent-checkbox.is-invalid {
+      outline: 2px solid #e74c3c;
+    }
     
     #leadform1,  #leadform, #leadform2 {
       width: 100%;

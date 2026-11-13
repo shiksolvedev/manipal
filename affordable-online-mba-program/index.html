@@ -9,6 +9,16 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/form.css">
   <script src="js/jquery-3.6.0.min.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18571008098"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18571008098');
+  </script>
 </head>
 
 <body>
@@ -968,6 +978,19 @@
       }
 
       const tasks = [];
+
+      // Google Ads Conversion Event
+      try {
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-18571008098/VKdpCKLdx7cdEOKwrJdF',
+            'value': 1.0,
+            'currency': 'INR'
+          });
+        }
+      } catch (gtagErr) {
+        console.warn("Google Ads conversion trigger error:", gtagErr);
+      }
 
       // 1. Forward to LeadSquared CRM API
       if (DEFAULT_LEADSQUARED_URL) {
